@@ -14,4 +14,4 @@ Project structure:
   * ./scripts contains the source code
     * main.R is the file used to start up the application
     * various directories used to organize different sections of the project
-  * ./data contains various input .csv data files
+  * ./inputs contains various input .csv data files

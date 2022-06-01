@@ -11,7 +11,7 @@ Project coordinator: Tudor-Alexandru Alexandrescu
 Project description: working with random variables using Shiny package
 
 Project structure:
-  * ./scripts contains the source code
+  * ./src contains the source code
     * main.R is the file used to start up the application
     * various directories used to organize different sections of the project
   * ./inputs contains various input .csv data files

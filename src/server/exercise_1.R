@@ -71,4 +71,6 @@ Exercise1 <- function(input, output) {
     show('exercise_1_page_histogram')
     show('exercise_1_page_boxplot')
   })
+  
+  return(NULL)
 }

@@ -1,8 +1,13 @@
 DashboardSidebar <- function() {
   dashboard.sidebar <- dashboardSidebar(sidebarMenu(
     menuItem(
-      "Exercise 1",
+      'Exercise 1',
       tabName = 'dashboard_sidedar_menu_exercise_1',
+      icon = icon('table', verify_fa = FALSE)
+    ),
+    menuItem(
+      'Exercise 2',
+      tabName = 'dashboard_sidedar_menu_exercise_2',
       icon = icon('table', verify_fa = FALSE)
     ),
     menuItem(

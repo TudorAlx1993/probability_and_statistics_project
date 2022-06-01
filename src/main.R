@@ -28,7 +28,9 @@ packages <- c('ggplot2',
               'shinydashboard',
               'magrittr',
               'tools',
-              'shinyjs')
+              'shinyjs',
+              'reshape2',
+              'dplyr')
 invisible(InstallAndLoadPackages(packages))
 
 # start the shiny app

@@ -22,8 +22,14 @@ r.files <-
 invisible(lapply(r.files, source))
 
 # install (if needed) and load the below defined R packages
-packages <- c('ggplot2', 'shiny', 'purrr', 'shinydashboard','magrittr')
+packages <- c('ggplot2', 
+              'shiny', 
+              'purrr',
+              'shinydashboard',
+              'magrittr',
+              'tools',
+              'shinyjs')
 invisible(InstallAndLoadPackages(packages))
 
 # start the shiny app
-shinyApp(ui=UserInterface,server = Server) 
+shinyApp(ui=UserInterface,server = Server)

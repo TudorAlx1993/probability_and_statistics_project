@@ -7,10 +7,18 @@ DistributionSummaryAsHTML <- function(distribution) {
     round(distribution$variance, 4),
     '<br/>',
     'Median: ',
-    round(distribution$median, 4),
+    ifelse(
+      class(distribution$median) == 'numeric',
+      round(distribution$median, 4),
+      distribution$median
+    ),
     '<br/>',
     'Mode: ',
-    round(distribution$mode, 4),
+    ifelse(
+      class(distribution$mode) == 'numeric',
+      round(distribution$mode, 4),
+      distribution$mode
+    ),
     '<br/>',
     'Skewness: ',
     round(distribution$skewness, 4),

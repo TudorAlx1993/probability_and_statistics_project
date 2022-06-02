@@ -20,7 +20,7 @@ NormalDistribution <- function(mean, sigma) {
   
   min.x <- (mean - 3 * sigma) * 1.1
   max.x <- (mean + 3 * sigma) * 1.1
-  x <- seq(min.x, max.x, 10 ** -3)
+  x <- seq(min.x, max.x, length.out = 10**4)
   
   pdf <- dnorm(x, mean, sigma)
   results$plot_pdf <- PlotPdfOrPmf(x, pdf, 'Normal distribution')

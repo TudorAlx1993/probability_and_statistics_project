@@ -14,7 +14,7 @@ BetaDistribution <- function(alfa, beta) {
     results$median <- (alfa - 1 / 3) / (alfa + beta - 2 / 3)
   } else{
     # there is no closed form solution
-    results$median <- median(rbeta(10**6,alfa,beta))
+    results$median <- qbeta(0.5,alfa,beta)
   }
   
   if (alfa > 1 & beta > 1) {

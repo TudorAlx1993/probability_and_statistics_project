@@ -24,7 +24,6 @@ Exercise5PageContent <- function() {
                    icon = icon('play')
       ) 
     ),
-    
     tags$br(),
     tags$br(),
     plotOutput('exercise_5_page_RV_plot')

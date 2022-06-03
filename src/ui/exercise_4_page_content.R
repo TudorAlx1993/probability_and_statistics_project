@@ -7,8 +7,8 @@ Exercise4PageContent <- function() {
     # P(B)
     # P(A and B)
     # P(A or B)
-    # P(A-B)
-    # P(B-A)
+    # P(A|B)
+    # P(B|A)
     
     # output:
     #   P(A)
@@ -16,7 +16,7 @@ Exercise4PageContent <- function() {
     # P(A and B)
     # P(A or B)
     # P(A-B)
-    # P(B-A)
+    # P(B|A)
     numericInput(
       'exercise_4_page_input_a',
       label = 'P(A)',
@@ -58,22 +58,22 @@ Exercise4PageContent <- function() {
       step = 0.1
     ),
     numericInput(
-      'exercise_4_page_input_a_minus_b',
-      label = 'P(A-B)',
+      'exercise_4_page_input_a_cond_b',
+      label = 'P(A|B)',
       value=NULL,
       min = 0,
       max = 1,
       step = 0.1
     ),
     numericInput(
-      'exercise_4_page_input_b_minus_a',
-      label = 'P(B-A)',
+      'exercise_4_page_input_b_cond_a',
+      label = 'P(B|A)',
       value=NULL,
       min = 0,
       max = 1,
       step = 0.1
     ),
-    actionButton('exercise_2_page_action_button',
+    actionButton('exercise_4_page_action_button',
                  'Run',
                  icon = icon('play')
                  ),

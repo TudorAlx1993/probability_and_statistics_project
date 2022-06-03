@@ -8,13 +8,19 @@ Exercise5 <- function(input, output) {
     }
     
     csv.data <- read.csv(file$datapath)
+    if (!ncol(csv.data) == 2) {
+      showNotification("File must contain 2 columns, outcomes and probabilities!", type = 'error')
+      return(NULL)
+    }
     
-    # req(input$exercise_5_page_start)
-    start.pos <- input$exercise_5_page_start
-    
+    if (!sum(csv.data[,2]) == 1) {
+      showNotification("Sum of probabilities must equal 1!", type = 'error')
+      return(NULL)
+    }
     # hide the previous output if another csv file is loaded
     hide('exercise_5_page_RV_plot')
     
+    start.pos <- input$exercise_5_page_start
     return(data.frame(csv.data[,1], csv.data[,2], start.pos))
   })
   observeEvent(input$exercise_5_page_upload_button, {

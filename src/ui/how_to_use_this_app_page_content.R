@@ -23,6 +23,26 @@ HowToUseThisAppPageContent <- function() {
         </ul>"
       )
     ),
+    h2("Exercise 2"),
+    p(
+      "Steps to follow:",
+      br(),
+      HTML(
+        "<ul>
+        <li>select the distribution name</li>
+        <li>set the values for the distribution's parameters</li>
+        <li>press the run button</li>
+        </ul>"
+      ),
+      "The output consists of:",
+      HTML(
+        "<ul>
+        <li>information related to the selected distribution</li>
+        <li>some statistical indicators related to the distribution</li>
+        <li>plots related to PDF (or PMF) and CDF functions</li>
+        </ul>"
+      )
+    )
     h2("Exercise 5"),
     p(
       h3("Plot discrete random variable"),
@@ -51,7 +71,6 @@ HowToUseThisAppPageContent <- function() {
       ),
       "The page will plot the result of the selected operation between the two inputed variables."
     ),
-    
   ))
   
   return(fluid.page)

@@ -25,8 +25,8 @@ Exercise2PageContent <- function() {
     conditionalPanel(
       condition = "input.exercise_2_page_select_dist_name=='Lognormal distribution'",
       numericInput(
-        'exercise_2_page_lognormal_dist_mean',
-        label = 'Mean',
+        'exercise_2_page_lognormal_dist_miu',
+        label = 'Miu',
         value = 0
       ),
       numericInput(
@@ -74,7 +74,7 @@ Exercise2PageContent <- function() {
       numericInput(
         'exercise_2_page_binomial_dist_n',
         label = 'n',
-        value = 1,
+        value = 10,
         min = 0
       ),
       numericInput(
@@ -133,9 +133,7 @@ Exercise2PageContent <- function() {
                plotOutput('exercise_2_page_dist_plot_pmf_or_pdf'),
                br(),
                plotOutput('exercise_2_page_dist_plot_cdf'))
-    ) #%>%
-      #hidden()
-    
+    ) 
   )
   
   return(fluid.page)

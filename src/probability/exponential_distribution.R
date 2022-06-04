@@ -19,8 +19,8 @@ ExponentialDistribution <- function(lambda) {
   results$excess_kurtosis <- 6
   
   min.x <- qexp(0, lambda)
-  max.x <- qexp(0.99) * 1.1
-  x <- seq(min.x, max.x, 10 ** -3)
+  max.x <- qexp(0.999)
+  x <- seq(min.x, max.x,length.out = 10**4)
   
   pdf <- dexp(x, lambda)
   results$plot_pdf <- PlotPdfOrPmf(x, pdf, 'Exponential distribution')

@@ -32,7 +32,9 @@ Exercise5 <- function(input, output) {
                        label = 'Starting position',
                        value = 1,
                        min = 1,
-                       max = length(data[,1]),
+                       max = length(outcomes(RV(data[,1], data[,2]))), 
+                       # handles case when csv file has multiple probabilities for the same outcome: 
+                       # adds them together, and final length will differ from length(data[,1])
                        step = 1)
     show('exercise_5_page_start')
     show('exercise_5_page_action_button')
@@ -43,16 +45,16 @@ Exercise5 <- function(input, output) {
     data.probs <- data[,2]
     start.pos <- data[,3][1]
     
-    outcomes.length <- length(data.outcomes)
-    data.outcomes <- data.outcomes[start.pos:outcomes.length]
-    probs.length <- length(data.probs)
-    data.probs <- data.probs[start.pos:outcomes.length]
+    data.rv <- RV(data.outcomes, data.probs)
+    new.data.outcomes <- outcomes(data.rv)[start.pos:length(data.outcomes)]
+    new.data.probs <- probs(data.rv)[start.pos:length(data.probs)]
     
     output$exercise_5_page_RV_plot <- renderPlot({
-      # plotted normally instead of plotting a random variable built through discreteRV,
+      # plotted by axes instead of plotting a random variable built through discreteRV,
       # because the second method can alter plotted probabilities 
       # if the starting position for viewing is higher than 1
-      plot(x = data.outcomes, y = data.probs, type = "h", col = "black", lwd = 5,
+      
+      plot(x = new.data.outcomes, y = new.data.probs, type = "h", col = "black", lwd = 5,
            main = "Random Variable", xlab = "Outcomes", ylab = "Probabilities")
     })
     show('exercise_5_page_RV_plot')

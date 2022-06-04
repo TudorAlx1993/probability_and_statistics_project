@@ -39,9 +39,6 @@ Exercise7 <- function(input, output) {
     operation <- input$exercise_7_page_operation
     return(data.frame(a.csvdata[,1], a.csvdata[,2], b.csvdata[,1], b.csvdata[,2], operation))
   })
-  # toListen <- reactive({
-  #   list(input$exercise_7_page_upload_a,input$exercise_7_page_upload_b)
-  # })
   observeEvent(GetInputData(), {
     show('exercise_7_page_action_button')
   })
@@ -58,9 +55,12 @@ Exercise7 <- function(input, output) {
       operation,
       'sum'= a.rv + b.rv,
       'dif'= a.rv - b.rv,
-      'prod'= MultiplyRV(a.rv, b.rv), ## discreteRV doesn't support RV multiplication, thus improvised solution in src.utils
-      'div'= a.rv / b.rv
-    )
+      'prod'= MultiplyRV(a.rv, b.rv), ## discreteRV doesn't support RV multiplication, 
+      # thus improvised solution in src.utils
+      'div'= DivideRV(a.rv, b.rv) # workaround to avoid plotting error when plotting a.rv / b.rv
+      # probabilities for same outcome didn't add up on plot, so function reinitializes result into another RV,
+      # which adds up the probabilities correctly
+      )
     output$exercise_7_page_RV_plot <- renderPlot({
       plot(result)
     })

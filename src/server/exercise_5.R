@@ -45,13 +45,14 @@ Exercise5 <- function(input, output) {
     data.probs <- data[,2]
     start.pos <- data[,3][1]
     
+    # adds duplicate probabilities for one outcome into a single outcome-probability pair
     data.rv <- RV(data.outcomes, data.probs)
     new.data.outcomes <- outcomes(data.rv)[start.pos:length(data.outcomes)]
     new.data.probs <- probs(data.rv)[start.pos:length(data.probs)]
     
     output$exercise_5_page_RV_plot <- renderPlot({
       # plotted by axes instead of plotting a random variable built through discreteRV,
-      # because the second method can alter plotted probabilities 
+      # because the second method will alter plotted probabilities so that their sum becomes 1
       # if the starting position for viewing is higher than 1
       
       plot(x = new.data.outcomes, y = new.data.probs, type = "h", col = "black", lwd = 5,

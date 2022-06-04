@@ -6,7 +6,7 @@ AboutPageContent <- function() {
     p(
       "This R application simulates different operations on random variables.",
       br(),
-      'The GUI was build using the Shiny package.'
+      'The GUI was built using the Shiny package.'
     ),
     h2("Team members"),
     HTML(

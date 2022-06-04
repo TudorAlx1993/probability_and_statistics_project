@@ -62,7 +62,7 @@ Exercise7 <- function(input, output) {
       # which adds up the probabilities correctly
       )
     output$exercise_7_page_RV_plot <- renderPlot({
-      plot(result)
+      plot(result, main = "Result")
     })
     show('exercise_7_page_RV_plot')
   })

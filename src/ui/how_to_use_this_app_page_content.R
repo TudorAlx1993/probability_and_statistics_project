@@ -42,7 +42,7 @@ HowToUseThisAppPageContent <- function() {
         <li>plots related to PDF (or PMF) and CDF functions</li>
         </ul>"
       )
-    )
+    ),
     h2("Exercise 5"),
     p(
       h3("Plot discrete random variable"),
@@ -70,6 +70,20 @@ HowToUseThisAppPageContent <- function() {
         </ul>"
       ),
       "The page will plot the result of the selected operation between the two inputed variables."
+    ),
+    h2("Exercise 8"),
+    p(
+      h3("Discrete random variable transformations"),
+      "To use:",
+      br(),
+      HTML(
+        "<ul>
+        <li>load a csv file with numerical content representing a discrete random variable X (except for the header)</li>
+        <li>input transformation function g(X) (make sure the only parameter is named capital X!)</li>
+        <li>press the run button</li>
+        </ul>"
+      ),
+      "The page will plot the result of the transformation."
     ),
   ))
   

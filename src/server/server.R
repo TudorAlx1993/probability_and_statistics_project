@@ -23,10 +23,10 @@ Server <- function(input, output) {
   # Exercise6(input, output) %>%
   #   invisible()
   # 
-  # # server code for exercise 7
-  # Exercise7(input, output) %>%
-  #   invisible()
-  # 
+  # server code for exercise 7
+  Exercise7(input, output) %>%
+    invisible()
+
   # # server code for exercise 8
   # Exercise8(input, output) %>%
   #   invisible()

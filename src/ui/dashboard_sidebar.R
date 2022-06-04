@@ -30,11 +30,11 @@ DashboardSidebar <- function() {
     #   tabName = 'dashboard_sidedar_menu_exercise_6',
     #   icon = icon('table', verify_fa = FALSE)
     # ),
-    # menuItem(
-    #   'Exercise 7',
-    #   tabName = 'dashboard_sidedar_menu_exercise_7',
-    #   icon = icon('table', verify_fa = FALSE)
-    # ),
+    menuItem(
+      'Exercise 7',
+      tabName = 'dashboard_sidedar_menu_exercise_7',
+      icon = icon('table', verify_fa = FALSE)
+    ),
     # menuItem(
     #   'Exercise 8',
     #   tabName = 'dashboard_sidedar_menu_exercise_8',

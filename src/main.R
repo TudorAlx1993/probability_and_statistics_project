@@ -1,3 +1,4 @@
+
 # Project: Random variables using Shiny
 # R version: 4.0.2 (Taking Off Again) or higher
 # OS: Windows 10, Unix like systems
@@ -9,6 +10,9 @@ try(dev.off(), silent = TRUE)
 options(scipen = 999)
 # only for R version < 4.0.0
 options(stringsAsFactors = FALSE)
+
+
+
 
 # load into the global environment R functions defined within the R files
 r.files <-
@@ -30,7 +34,8 @@ packages <- c('ggplot2',
               'tools',
               'shinyjs',
               'reshape2',
-              'dplyr')
+              'dplyr',
+              'discreteRV')
 invisible(InstallAndLoadPackages(packages))
 
 # start the shiny app

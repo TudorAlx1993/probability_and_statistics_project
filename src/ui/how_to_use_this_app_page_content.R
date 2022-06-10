@@ -42,7 +42,7 @@ HowToUseThisAppPageContent <- function() {
         <li>plots related to PDF (or PMF) and CDF functions</li>
         </ul>"
       )
-    )
+    ),
     h2("Exercise 5"),
     p(
       h3("Plot discrete random variable"),

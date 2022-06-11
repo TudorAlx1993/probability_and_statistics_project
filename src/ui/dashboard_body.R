@@ -11,8 +11,8 @@ DashboardBody <- function() {
               Exercise4PageContent()),
       tabItem(tabName = 'dashboard_sidedar_menu_exercise_5',
               Exercise5PageContent()),
-      # tabItem(tabName = 'dashboard_sidedar_menu_exercise_6',
-      #         Exercise6PageContent()),
+      tabItem(tabName = 'dashboard_sidedar_menu_exercise_6',
+              Exercise6PageContent()),
       tabItem(tabName = 'dashboard_sidedar_menu_exercise_7',
               Exercise7PageContent()),
       tabItem(tabName = 'dashboard_sidedar_menu_exercise_8',
@@ -25,7 +25,8 @@ DashboardBody <- function() {
               HowToUseThisAppPageContent()),
       tabItem(tabName = 'dashboard_sidebar_menu_about',
               AboutPageContent())
-    ))
+      )
+    )
   
   return(dashboard.body)
 }

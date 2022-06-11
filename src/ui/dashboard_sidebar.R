@@ -25,11 +25,11 @@ DashboardSidebar <- function() {
       tabName = 'dashboard_sidedar_menu_exercise_5',
       icon = icon('table', verify_fa = FALSE)
     ),
-    # menuItem(
-    #   'Exercise 6',
-    #   tabName = 'dashboard_sidedar_menu_exercise_6',
-    #   icon = icon('table', verify_fa = FALSE)
-    # ),
+    menuItem(
+      'Exercise 6',
+      tabName = 'dashboard_sidedar_menu_exercise_6',
+      icon = icon('table', verify_fa = FALSE)
+    ),
     menuItem(
       'Exercise 7',
       tabName = 'dashboard_sidedar_menu_exercise_7',
@@ -60,7 +60,8 @@ DashboardSidebar <- function() {
       tabName = 'dashboard_sidebar_menu_about',
       icon = icon('question', verify_fa = FALSE)
     )
-  ))
+  )
+  )
   
   return(dashboard.sidebar)
 }

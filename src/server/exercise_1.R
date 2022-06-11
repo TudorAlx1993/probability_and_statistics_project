@@ -30,13 +30,15 @@ Exercise1 <- function(input, output) {
                       choices = colnames(data),
                       selected = NA)
     show('exercise_1_page_select_column_name')
-  })
+  }) %>%
+    invisible()
   
   observeEvent(input$exercise_1_page_select_column_name, {
     if (!all(input$exercise_1_page_select_column_name == '')) {
       show('exercise_1_page_run_button')
     }
-  })
+  }) %>%
+    invisible()
   
   observeEvent(input$exercise_1_page_run_button, {
     data <- GetInputData()
@@ -70,7 +72,8 @@ Exercise1 <- function(input, output) {
     show('exercise_1_page_summary_content')
     show('exercise_1_page_histogram')
     show('exercise_1_page_boxplot')
-  })
+  }) %>%
+    invisible()
   
   return(NULL)
 }

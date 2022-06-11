@@ -2,6 +2,7 @@ Exercise1PageContent <- function() {
   fluid.page <- fluidPage(
     useShinyjs(),
     h1("Exercise 1", align = 'center'),
+    h2("Analysis of numerical data", align = 'center'),
     br(),
     fileInput(
       'exercise_1_page_upload_button',

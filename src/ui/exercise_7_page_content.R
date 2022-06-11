@@ -2,6 +2,7 @@ Exercise7PageContent <- function() {
   fluid.page <- fluidPage(
     useShinyjs(),
     h1("Exercise 7", align = 'center'),
+    h2("Operations on discrete random variables", align = 'center'),
     fileInput(
       'exercise_7_page_upload_a',
       label = 'Upload CSV file for RV A',

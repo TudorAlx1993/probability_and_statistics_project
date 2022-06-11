@@ -2,6 +2,7 @@ Exercise9PageContent <- function() {
   fluid.page <- fluidPage(
     useShinyjs(),
     h1("Exercise 9", align = 'center'),
+    h2("Transformation of joint random variable distribution", align = 'center'),
     fileInput(
       'exercise_9_page_upload_values_x',
       label = 'Upload CSV file for values of discrete random variable X',
@@ -26,12 +27,12 @@ Exercise9PageContent <- function() {
     textInput(
       'exercise_9_page_function_g',
       label = 'Function g(XandY)',
-      placeholder = 'max(XandY)'
+      placeholder = '3 * marginal(XandY,1)'
     ),
     textInput(
       'exercise_9_page_function_h',
       label = 'Function h(XandY)',
-      placeholder = 'min(XandY)'
+      placeholder = 'marginal(XandY,2)^2'
     ),
     hidden(
       actionButton('exercise_9_page_action_button',

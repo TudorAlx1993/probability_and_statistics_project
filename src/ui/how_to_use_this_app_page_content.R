@@ -85,6 +85,22 @@ HowToUseThisAppPageContent <- function() {
       ),
       "The page will plot the result of the transformation."
     ),
+    h2("Exercise 9"),
+    p(
+      h3("Compute transformed joint distribution of discrete random variables"),
+      "This page calculates and prints the joint distribution of two discrete random variables, Z and T, calculated from an inputed joint distribution XandY.",
+      br(),
+      "To use:",
+      br(),
+      HTML(
+        "<ul>
+        <li>input joint distribution X,Y represented by 3 csv files containing 1 column each: values of X, values of Y, overall probabilities</li>
+        <li>input functions for Z = g(XandY) and T = h(XandY) applied to joint distribution (each must result in discrete random variable!)</li>
+        <li>press the run button</li>
+        </ul>"
+      ),
+      "The page will print the joint distribution of the random variables Z and T, which are calculated using each of the input functions on the input joint distribution."
+    )
   ))
   
   return(fluid.page)

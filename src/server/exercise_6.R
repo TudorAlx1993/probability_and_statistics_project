@@ -455,15 +455,20 @@ Exercise6 <- function(input, output) {
           y <-
             input$exercise_6_page_greater_than_x_and_less_then_y_y_value
           
-          if (!(x < y)) {
-            showNotification("The value of x should be strictly less than the value of y!",
+          if (!((x + 1) <= (y - 1))) {
+            showNotification("The fallowing condition is not meet: (x+1) <= (y-1)",
                              type = 'error')
             return(NULL)
           }
           
-          probability <-
-            ppois(y, poisson.dist.lambda) - dpois(y, poisson.dist.lambda) -
-            (ppois(x, poisson.dist.lambda) - dpois(x, poisson.dist.lambda))
+          if (!(x == as.integer(x) && y == as.integer(y))) {
+            showNotification("The values of x and y should have an integer type!",
+                             type = 'error')
+            return(NULL)
+          }
+          
+          probability <- dpois((x + 1):(y - 1), poisson.dist.lambda) %>%
+            sum()
         }
         else if (input$exercise_6_page_radio_button == 'greater_or_equal_than_x_and_less_then_y') {
           x <-
@@ -471,15 +476,20 @@ Exercise6 <- function(input, output) {
           y <-
             input$exercise_6_page_greater_or_equal_than_x_and_less_then_y_y_value
           
-          if (!(x < y)) {
-            showNotification("The value of x should be strictly less than the value of y!",
+          if (!(x <= (y - 1))) {
+            showNotification("The fallowing condition is not meet: x <= (y-1)",
                              type = 'error')
             return(NULL)
           }
           
-          probability <-
-            ppois(y, poisson.dist.lambda) - dpois(y, poisson.dist.lambda) -
-            ppois(x, poisson.dist.lambda)
+          if (!(x == as.integer(x) && y == as.integer(y))) {
+            showNotification("The values of x and y should have an integer type!",
+                             type = 'error')
+            return(NULL)
+          }
+          
+          probability <- dpois(x:(y - 1), poisson.dist.lambda) %>%
+            sum()
         }
         else if (input$exercise_6_page_radio_button == 'greater_than_x_and_less_or_equal_then_y') {
           x <-
@@ -487,14 +497,20 @@ Exercise6 <- function(input, output) {
           y <-
             input$exercise_6_page_greater_than_x_and_less_or_equal_then_y_y_value
           
-          if (!(x < y)) {
-            showNotification("The value of x should be strictly less than the value of y!",
+          if (!((x + 1) <= y)) {
+            showNotification("The fallowing condition is not meet: (x+1) <= y",
                              type = 'error')
             return(NULL)
           }
           
-          probability <-
-            ppois(y, poisson.dist.lambda) - (ppois(x, poisson.dist.lambda) - dpois(x, poisson.dist.lambda))
+          if (!(x == as.integer(x) && y == as.integer(y))) {
+            showNotification("The values of x and y should have an integer type!",
+                             type = 'error')
+            return(NULL)
+          }
+          
+          probability <- dpois((x + 1):y, poisson.dist.lambda) %>%
+            sum()
         }
         else if (input$exercise_6_page_radio_button == 'greater_or_equal_than_x_and_less_or_equal_then_y') {
           x <-
@@ -502,14 +518,20 @@ Exercise6 <- function(input, output) {
           y <-
             input$exercise_6_page_greater_or_equal_than_x_and_less_or_equal_then_y_y_value
           
-          if (!(x < y)) {
-            showNotification("The value of x should be strictly less than the value of y!",
+          if (!(x <= y)) {
+            showNotification("The fallowing condition is not meet: x <= y",
                              type = 'error')
             return(NULL)
           }
           
-          probability <-
-            ppois(y, poisson.dist.lambda) - ppois(x, poisson.dist.lambda)
+          if (!(x == as.integer(x) && y == as.integer(y))) {
+            showNotification("The values of x and y should have an integer type!",
+                             type = 'error')
+            return(NULL)
+          }
+          
+          probability <- dpois(x:y, poisson.dist.lambda) %>%
+            sum()
         }
       },
       'Binomial distribution' = {
@@ -560,17 +582,21 @@ Exercise6 <- function(input, output) {
           y <-
             input$exercise_6_page_greater_than_x_and_less_then_y_y_value
           
-          if (!(x < y)) {
-            showNotification("The value of x should be strictly less than the value of y!",
+          if (!((x + 1) <= (y - 1))) {
+            showNotification("The fallowing condition is not meet: (x+1) <= (y-1)",
+                             type = 'error')
+            return(NULL)
+          }
+          
+          if (!(x == as.integer(x) && y == as.integer(y))) {
+            showNotification("The values of x and y should have an integer type!",
                              type = 'error')
             return(NULL)
           }
           
           probability <-
-            pbinom(y, binomial.dist.n, binomial.dist.p) - dbinom(y, binomial.dist.n, binomial.dist.p) -
-            (
-              pbinom(x, binomial.dist.n, binomial.dist.p) - dbinom(x, binomial.dist.n, binomial.dist.p)
-            )
+            dbinom((x + 1):(y - 1), binomial.dist.n, binomial.dist.p) %>%
+            sum()
         }
         else if (input$exercise_6_page_radio_button == 'greater_or_equal_than_x_and_less_then_y') {
           x <-
@@ -578,15 +604,21 @@ Exercise6 <- function(input, output) {
           y <-
             input$exercise_6_page_greater_or_equal_than_x_and_less_then_y_y_value
           
-          if (!(x < y)) {
-            showNotification("The value of x should be strictly less than the value of y!",
+          if (!(x <= (y - 1))) {
+            showNotification("The fallowing condition is not meet: x <= (y-1)",
+                             type = 'error')
+            return(NULL)
+          }
+          
+          if (!(x == as.integer(x) && y == as.integer(y))) {
+            showNotification("The values of x and y should have an integer type!",
                              type = 'error')
             return(NULL)
           }
           
           probability <-
-            pbinom(y, binomial.dist.n, binomial.dist.p) - dbinom(y, binomial.dist.n, binomial.dist.p) -
-            pbinom(x, binomial.dist.n, binomial.dist.p)
+            dbinom(x:(y - 1), binomial.dist.n, binomial.dist.p) %>%
+            sum()
         }
         else if (input$exercise_6_page_radio_button == 'greater_than_x_and_less_or_equal_then_y') {
           x <-
@@ -594,17 +626,21 @@ Exercise6 <- function(input, output) {
           y <-
             input$exercise_6_page_greater_than_x_and_less_or_equal_then_y_y_value
           
-          if (!(x < y)) {
-            showNotification("The value of x should be strictly less than the value of y!",
+          if (!((x + 1) <= y)) {
+            showNotification("The fallowing condition is not meet: (x+1) <= y",
                              type = 'error')
             return(NULL)
           }
           
-          print('aici')
+          if (!(x == as.integer(x) && y == as.integer(y))) {
+            showNotification("The values of x and y should have an integer type!",
+                             type = 'error')
+            return(NULL)
+          }
+          
           probability <-
-            pbinom(y, binomial.dist.n, binomial.dist.p) - (
-              pbinom(x, binomial.dist.n, binomial.dist.p) - dbinom(x, binomial.dist.n, binomial.dist.p)
-            )
+            dbinom((x + 1):y, binomial.dist.n, binomial.dist.p) %>%
+            sum()
         }
         else if (input$exercise_6_page_radio_button == 'greater_or_equal_than_x_and_less_or_equal_then_y') {
           x <-
@@ -612,14 +648,21 @@ Exercise6 <- function(input, output) {
           y <-
             input$exercise_6_page_greater_or_equal_than_x_and_less_or_equal_then_y_y_value
           
-          if (!(x < y)) {
-            showNotification("The value of x should be strictly less than the value of y!",
+          if (!(x <= y)) {
+            showNotification("The fallowing condition is not meet: x <= y",
+                             type = 'error')
+            return(NULL)
+          }
+          
+          if (!(x == as.integer(x) && y == as.integer(y))) {
+            showNotification("The values of x and y should have an integer type!",
                              type = 'error')
             return(NULL)
           }
           
           probability <-
-            pbinom(y, binomial.dist.n, binomial.dist.p) - pbinom(x, binomial.dist.n, binomial.dist.p)
+            dbinom(x:y, binomial.dist.n, binomial.dist.p) %>%
+            sum()
         }
       },
       'Uniform distribution' = {

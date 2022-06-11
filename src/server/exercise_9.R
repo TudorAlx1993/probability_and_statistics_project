@@ -60,13 +60,6 @@ Exercise9 <- function(input, output) {
     input.probs <- data[,3]
     input.g <- data[,4][1]
     input.h <- data[,5][1]
-    # showNotification(paste("X: ", toString(input.outcomes.x)))
-    # showNotification(paste("Test: ", toString(c(1:5))))
-    # Sys.sleep(3)
-    # showNotification(paste("Y: ", toString(input.outcomes.y)))
-    # Sys.sleep(3)
-    # showNotification(paste("probs: ", toString(input.probs)))
-    # Sys.sleep(3)
     g <- function(XandY) {}
     body(g) <- parse(text = input.g)
     

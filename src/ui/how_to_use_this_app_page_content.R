@@ -2,9 +2,8 @@ HowToUseThisAppPageContent <- function() {
   fluid.page <- fluidPage(tags$div(
     h1("How to use this app", align = 'center'),
     br(),
-    h2("Exercise 1"),
+    h2("Exercise 1: analysis of numerical data"),
     p(
-      h3("Analysis of numerical data"),
       "Steps to follow:",
       br(),
       HTML(
@@ -23,7 +22,9 @@ HowToUseThisAppPageContent <- function() {
         </ul>"
       )
     ),
-    h2("Exercise 2"),
+    h2(
+      "Exercise 2: viewing discrete and continuous probability distribution"
+    ),
     p(
       "Steps to follow:",
       br(),
@@ -56,6 +57,23 @@ HowToUseThisAppPageContent <- function() {
         </ul>"
       ),
       "The page will output a plot of the inputed discrete random variable, starting from the desired position."
+    ),
+    h2(
+      "Exercise 6: implementing the P function from discreteRV package"
+    ),
+    p(
+      "Steps to follow:",
+      br(),
+      HTML(
+        "<ul>
+        <li>select the distribution name</li>
+        <li>set the values for the distribution's parameters</li>
+        <li>select the type of probability you are interested of (e.g.: P(X<x), P(x<X<y), etc)</li>
+        <li>set the x and y parameters</li>
+        <li>press the run button</li>
+        </ul>"
+      ),
+      "The output contains the evaluated probability.",
     ),
     h2("Exercise 7"),
     p(

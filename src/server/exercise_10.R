@@ -105,7 +105,7 @@ Exercise10 <- function(input, output) {
         }
         
         if (!(binomial.dist.p >= 0 & binomial.dist.p <= 1)) {
-          showNotification("The p parameter of a binomial distribution should be a probability!",
+          showNotification("The p parameter of a binomial distribution should be a probability between 0 and 1!",
                            type = 'error')
           return(NULL)
         }
@@ -120,7 +120,7 @@ Exercise10 <- function(input, output) {
         
         if (!(cont.uniform.dist.a < cont.uniform.dist.b)) {
           showNotification(
-            "In the case of an uniform distribution paramter a should be strictly less than parameter b!",
+            "In case of an uniform distribution, parameter a should be strictly less than parameter b!",
             type = 'error'
           )
           return(NULL)
@@ -135,7 +135,7 @@ Exercise10 <- function(input, output) {
         
         if (beta.dist.alfa <= 0 | beta.dist.beta <= 0) {
           showNotification(
-            "In the case of a beta distribution paramters alfa and beta should be strictly positive!",
+            "In case of a beta distribution, parameters alfa and beta should be strictly positive!",
             type = 'error'
           )
           return(NULL)

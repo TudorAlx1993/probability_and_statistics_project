@@ -8,6 +8,8 @@ BinomialDistribution <- function(n, p) {
   
   results$type <- 'discrete'
   
+  results$support <- c(min = 0, max = n)
+  
   results$mean <- n * p
   
   results$variance <- n * p * q
@@ -31,6 +33,11 @@ BinomialDistribution <- function(n, p) {
   cdf <- pbinom(x, n, p)
   results$plot_cdf <-
     PlotCdf(x, cdf, 'Binomial distribution', FALSE)
+  
+  results$pmf <- function(x) {
+    dbinom(x,n,p) %>%
+      return()
+  }
   
   return(results)
 }

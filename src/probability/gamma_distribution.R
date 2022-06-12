@@ -6,6 +6,8 @@ GammaDistribution <- function(shape, scale) {
   
   results$type <- 'continuous'
   
+  results$support <- c(min = 0, max = Inf)
+  
   results$mean <- shape*scale
   
   results$variance <- shape*scale**2
@@ -34,6 +36,11 @@ GammaDistribution <- function(shape, scale) {
   cdf <- pgamma(x,shape,scale=scale)
   results$plot_cdf <-
     PlotCdf(x, cdf, 'Gamma distribution')
+  
+  results$pdf <- function(x) {
+    dgamma(x,shape,scale = scale) %>%
+      return()
+  }
   
   return(results)
 }

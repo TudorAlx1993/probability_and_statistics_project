@@ -6,6 +6,8 @@ BetaDistribution <- function(alfa, beta) {
   
   results$type <- 'continuous'
   
+  results$support <- c(min = 0, max = 1)
+  
   results$mean <- alfa / (alfa + beta)
   
   results$variance <- (alfa * beta) / ((alfa + beta) ** 2 * (alfa + beta +1))
@@ -50,6 +52,11 @@ BetaDistribution <- function(alfa, beta) {
   cdf <- pbeta(x,alfa,beta)
   results$plot_cdf <-
     PlotCdf(x, cdf, 'Beta distribution')
+  
+  results$pdf <- function(x) {
+    dbeta(x,alfa,beta) %>%
+      return()
+  }
   
   return(results)
 }

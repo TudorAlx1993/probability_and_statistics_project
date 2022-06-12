@@ -6,6 +6,8 @@ ContinuousUniformDistribution <- function(a, b) {
   
   results$type <- 'continuous'
   
+  results$support <- c(min = a, max = b)
+  
   results$mean <- (a + b) / 2
   
   results$variance <- ((b - a) ** 2) / 12
@@ -33,6 +35,11 @@ ContinuousUniformDistribution <- function(a, b) {
   cdf <- punif(x, a, b)
   results$plot_cdf <-
     PlotCdf(x, cdf, 'Continuous uniform distribution')
+  
+  results$pdf <- function(x) {
+    dunif(x,a,b) %>%
+      return()
+  }
   
   return(results)
 }

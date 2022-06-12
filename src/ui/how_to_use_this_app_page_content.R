@@ -105,7 +105,9 @@ HowToUseThisAppPageContent <- function() {
     ),
     h2("Exercise 9"),
     p(
-      h3("Compute transformed joint distribution of discrete random variables"),
+      h3(
+        "Compute transformed joint distribution of discrete random variables"
+      ),
       "This page calculates and prints the joint distribution of two discrete random variables, Z and T, calculated from an inputed joint distribution XandY.",
       br(),
       "To use:",
@@ -118,6 +120,26 @@ HowToUseThisAppPageContent <- function() {
         </ul>"
       ),
       "The page will print the joint distribution of the random variables Z and T, which are calculated using each of the input functions on the input joint distribution."
+    ),
+    h2("Exercise 10: calculating mean and variance of g(X)"),
+    p(
+      "Steps to follow:",
+      br(),
+      HTML(
+        "<ul>
+        <li>select the distribution name for the random variable X</li>
+        <li>set the values for the distribution's parameters</li>
+        <li>enter the g(x) function</li>
+        <li>press the run button</li>
+        </ul>"
+      ),
+      "The output consists of:",
+      HTML(
+        "<ul>
+        <li>mean of the g(X) random variable</li>
+        <li>variance of the g(X) random variable</li>
+        </ul>"
+      )
     )
   ))
   

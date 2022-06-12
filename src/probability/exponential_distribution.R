@@ -6,6 +6,8 @@ ExponentialDistribution <- function(lambda) {
   
   results$type <- 'continuous'
   
+  results$support <- c(min = 0, max = Inf)
+  
   results$mean <- 1 / lambda
   
   results$variance <- 1 / (lambda ** 2)
@@ -27,6 +29,11 @@ ExponentialDistribution <- function(lambda) {
   
   cdf <- pexp(x, lambda)
   results$plot_cdf <- PlotCdf(x, cdf, 'Exponential distribution')
+  
+  results$pdf <- function(x) {
+    dexp(x,lambda) %>%
+      return()
+  }
   
   return(results)
 }

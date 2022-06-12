@@ -66,8 +66,6 @@ Exercise9 <- function(input, output) {
     h <- function(XandY) {}
     body(h) <- parse(text = input.h)
     
-    
-    
     joint.input <- jointRVFromInput(input.outcomes.x, input.outcomes.y, input.probs)
     z <- g(joint.input)
     t <- h(joint.input)

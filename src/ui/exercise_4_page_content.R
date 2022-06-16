@@ -2,7 +2,7 @@ Exercise4PageContent <- function() {
   fluid.page <- fluidPage(
     useShinyjs(),
     h1("Exercise 4", align = 'center'),
-    h2("Working with events", align = "center"),
+    h2("Work with events", align = "center"),
     # ## TODO: inputs:
     # P(A)
     # P(B)

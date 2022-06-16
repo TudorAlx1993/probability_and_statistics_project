@@ -2,6 +2,8 @@ Exercise2PageContent <- function() {
   fluid.page <- fluidPage(
     useShinyjs(),
     h1("Exercise 2", align = 'center'),
+    h2("View discrete or continuous probability distribution", align = 'center'),
+    br(),
     selectInput(
       'exercise_2_page_select_dist_name',
       label = 'Select the probability distribution',

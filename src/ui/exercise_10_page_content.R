@@ -2,6 +2,8 @@ Exercise10PageContent <- function() {
   fluid.page <- fluidPage(
     useShinyjs(),
     h1("Exercise 10", align = 'center'),
+    h2("Calculate mean and variance of g(X)", align = 'center'),
+    br(),
     selectInput(
       'exercise_10_page_select_dist_name',
       label = 'Select the probability distribution',

@@ -2,6 +2,7 @@ Exercise6PageContent <- function() {
   fluid.page <- fluidPage(
     useShinyjs(),
     h1("Exercise 6", align = 'center'),
+    h2("Implementing the P function from discreteRV package", align = 'center'),
     selectInput(
       'exercise_6_page_select_dist_name',
       label = 'Select the probability distribution',

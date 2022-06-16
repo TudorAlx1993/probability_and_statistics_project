@@ -2,8 +2,9 @@ HowToUseThisAppPageContent <- function() {
   fluid.page <- fluidPage(tags$div(
     h1("How to use this app", align = 'center'),
     br(),
-    h2("Exercise 1: analysis of numerical data"),
+    h2("Exercise 1"),
     p(
+      h3("Analysis of numerical data"),
       "Steps to follow:",
       br(),
       HTML(
@@ -22,10 +23,9 @@ HowToUseThisAppPageContent <- function() {
         </ul>"
       )
     ),
-    h2(
-      "Exercise 2: viewing discrete and continuous probability distribution"
-    ),
+    h2("Exercise 2"),
     p(
+      h3("View discrete or continuous probability distribution"),
       "Steps to follow:",
       br(),
       HTML(
@@ -56,12 +56,11 @@ HowToUseThisAppPageContent <- function() {
         <li>press the run button</li>
         </ul>"
       ),
-      "The page will output a plot of the inputed discrete random variable, starting from the desired position."
+      "The page will output a plot of the input discrete random variable, starting from the desired position."
     ),
-    h2(
-      "Exercise 6: implementing the P function from discreteRV package"
-    ),
+    h2("Exercise 6"),
     p(
+      h3("Implementing the P function from discreteRV package"),
       "Steps to follow:",
       br(),
       HTML(
@@ -87,7 +86,7 @@ HowToUseThisAppPageContent <- function() {
         <li>press the run button</li>
         </ul>"
       ),
-      "The page will plot the result of the selected operation between the two inputed variables."
+      "The page will plot the result of the selected operation between the two input variables."
     ),
     h2("Exercise 8"),
     p(
@@ -108,7 +107,7 @@ HowToUseThisAppPageContent <- function() {
       h3(
         "Compute transformed joint distribution of discrete random variables"
       ),
-      "This page calculates and prints the joint distribution of two discrete random variables, Z and T, calculated from an inputed joint distribution XandY.",
+      "This page calculates and prints the joint distribution of two discrete random variables, Z and T, calculated from an input joint distribution XandY.",
       br(),
       "To use:",
       br(),
@@ -121,8 +120,9 @@ HowToUseThisAppPageContent <- function() {
       ),
       "The page will print the joint distribution of the random variables Z and T, which are calculated using each of the input functions on the input joint distribution."
     ),
-    h2("Exercise 10: calculating mean and variance of g(X)"),
+    h2("Exercise 10"),
     p(
+      h3("Calculate mean and variance of g(X)"),
       "Steps to follow:",
       br(),
       HTML(

@@ -1,7 +1,7 @@
 mnV <- function(joint.rv) {
   
   min.pair <- function(a, b) {
-    return(max(c(a, b)))
+    return(min(c(a, b)))
   }
   
   marg.1 <- marginal(joint.rv, 1)

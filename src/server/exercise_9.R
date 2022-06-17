@@ -65,7 +65,7 @@ Exercise9 <- function(input, output) {
     #Replacement strings have to be of the same length as original string, hence short names of functions
     
     g.text <- str_replace_all(input.g, fixed("max(XandY)"), fixed("mxV(XandY)"))
-    g.text <- str_replace_all(g.text, fixed("min(XandY"), fixed("mnV(XandY)"))
+    g.text <- str_replace_all(g.text, fixed("min(XandY)"), fixed("mnV(XandY)"))
     
     h.text <- str_replace_all(input.h, fixed("max(XandY)"), fixed("mxV(XandY)"))
     h.text <- str_replace_all(h.text, fixed("min(XandY)"), fixed("mnV(XandY)"))

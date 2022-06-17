@@ -60,11 +60,21 @@ Exercise9 <- function(input, output) {
     input.probs <- data[,3]
     input.g <- data[,4][1]
     input.h <- data[,5][1]
+    
+    #Replace occurences of max and min function calls with versions defined to return a discrete random variable
+    #Replacement strings have to be of the same length as original string, hence short names of functions
+    
+    g.text <- str_replace_all(input.g, fixed("max(XandY)"), fixed("mxV(XandY)"))
+    g.text <- str_replace_all(g.text, fixed("min(XandY"), fixed("mnV(XandY)"))
+    
+    h.text <- str_replace_all(input.h, fixed("max(XandY)"), fixed("mxV(XandY)"))
+    h.text <- str_replace_all(h.text, fixed("min(XandY)"), fixed("mnV(XandY)"))
+    
     g <- function(XandY) {}
-    body(g) <- parse(text = input.g)
+    body(g) <- parse(text = g.text)
     
     h <- function(XandY) {}
-    body(h) <- parse(text = input.h)
+    body(h) <- parse(text = h.text)
     
     joint.input <- jointRVFromInput(input.outcomes.x, input.outcomes.y, input.probs)
     z <- g(joint.input)

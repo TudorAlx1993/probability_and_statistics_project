@@ -32,7 +32,7 @@ Exercise9PageContent <- function() {
     textInput(
       'exercise_9_page_function_h',
       label = 'Function h(XandY)',
-      placeholder = 'marginal(XandY,2)^2'
+      placeholder = 'min(XandY)'
     ),
     hidden(
       actionButton('exercise_9_page_action_button',

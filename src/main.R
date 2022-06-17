@@ -31,7 +31,8 @@ packages <- c('ggplot2',
               'shinyjs',
               'reshape2',
               'dplyr',
-              'discreteRV')
+              'discreteRV',
+              'stringr')
 invisible(InstallAndLoadPackages(packages))
 
 # start the shiny app

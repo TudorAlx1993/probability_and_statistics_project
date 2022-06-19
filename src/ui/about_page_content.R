@@ -13,7 +13,7 @@ AboutPageContent <- function() {
       "<ul>
          <li>Tudor-Alexandru Alexandrescu (coordinator)</li>
          <li>Radu Andrei Dumitru</li>
-         <li>Raluca Branceanu</li>
+         <li>Raluca Brinceanu</li>
          <li>Robert Samata</li>
          </ul>"
     ),

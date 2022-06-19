@@ -2,7 +2,8 @@ BetaDistribution <- function(alfa, beta) {
   results <- list()
   
   results$description <-
-    'TODO Raluca/Robert write here some text about this distribution from Wikipedia.'
+    'Distributia beta este o familie de distributii continue de probabilitate definite pe intervalul [0, 1] parametrizate de doi parametri pozitivi, notati cu alfa si beta, care apar ca exponenti ai variabilei aleatoare si controleaza forma distributiei.
+  Distributia beta a fost aplicata pentru a modela comportamentul variabilelor aleatoare limitate la intervale de lungime finita într-o mare varietate de discipline.'
   
   results$type <- 'continuous'
   

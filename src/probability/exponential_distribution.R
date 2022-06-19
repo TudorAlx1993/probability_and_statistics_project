@@ -2,7 +2,9 @@ ExponentialDistribution <- function(lambda) {
   results <- list()
   
   results$description <-
-    'TODO Raluca/Robert write here some text about this distribution from Wikipedia.'
+    'Distributia exponentiala este distributia de probabilitate a timpului dintre evenimente într-un proces punctual Poisson , adica un proces în care evenimentele au loc continuu si independent la o rata medie constanta. Este un caz particular al distributiei gamma.Este analogul continuu al distributiei geometrice si are proprietatea cheie de a nu avea memorie .
+    Pe langa faptul ca este utilizat pentru analiza proceselor punctuale Poisson, se gaseste în diverse alte contexte.
+Distributia exponentiala nu este aceeasi cu clasa familiilor exponentiale de distributii, care este o clasa mare de distributii de probabilitate care include distributia exponentiala ca unul dintre membrii sai, dar include si distributia normala , distributia binomiala , distributia gamma , Poisson , si multe altele.'
   
   results$type <- 'continuous'
   

@@ -2,7 +2,11 @@ GammaDistribution <- function(shape, scale) {
   results <- list()
   
   results$description <-
-    'TODO Raluca/Robert write here some text about this distribution from Wikipedia.'
+    'Distributia gamma este o familie cu doi parametri de distributii continue de probabilitate . Distributia exponentiala , distributia Erlang si distributia chi-patrat sunt cazuri speciale ale distributiei gamma. Exista doua parametrizari diferite de uz comun:
+Cu un parametru de forma k si un parametru de scara theta .
+Cu un parametru de forma alfa = k si un parametru de scara inversa beta = 1/ theta , numit parametru de rata .
+In fiecare dintre aceste forme, ambii parametri sunt numere reale pozitive.
+Distributia gamma este distributia maxima a probabilitatii de entropie (atat in raport cu o masura de baza uniforma, cat si in raport cu o masura de baza 1/ x ) pentru o variabila aleatoare X pentru care E [ X ] = k * theta = alfa / beta este fix si mai mare decat zero, iar E [ln( X )] = psi ( k ) + ln( theta ) = psi ( alfa ) - ln( beta ) este fix ( psi este functia digamma )'
   
   results$type <- 'continuous'
   

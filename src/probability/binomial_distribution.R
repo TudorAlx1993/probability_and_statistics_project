@@ -4,7 +4,9 @@ BinomialDistribution <- function(n, p) {
   results <- list()
   
   results$description <-
-    'TODO Raluca/Robert write here some text about this distribution from Wikipedia.'
+    'Distributia binomiala cu parametrii n si p este distributia de probabilitate discreta a numarului de succese intr-o succesiune de n experimente independente , fiecare punand o intrebare da-nu si fiecare cu propriul rezultat cu valoare booleana : succes (cu probabilitate p ) sau esec (cu probabilitate q  = 1 −  p ). Un singur experiment de succes/esec este numit si un proces Bernoulli sau experimentul Bernoulli, iar o secventa de rezultate se numeste proces Bernoulli ; pentru o singura incercare, adica n  = 1, distributia binomiala este o distributie Bernoulli .
+    Distributia binomiala este baza pentru popularul test binomial de semnificatie statistica .
+    Distributia binomiala este frecvent utilizata pentru a modela numarul de succese dintr-un esantion de marime n extras cu inlocuire dintr-o populatie de marime N . Daca esantionarea este efectuata fara inlocuire, extragerile nu sunt independente si astfel distributia rezultata este o distributie hipergeometrica , nu una binomiala. Cu toate acestea, pentru N mult mai mare decat n , distributia binomiala ramane o aproximare buna si este utilizata pe scara larga.'
   
   results$type <- 'discrete'
   

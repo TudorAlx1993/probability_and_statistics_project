@@ -3,8 +3,8 @@ Exercise4 <- function(input, output) {
   # P(A or B) = P(A) + P(B) - P(A and B)
   # if independent: P(A and B) = P(A) * P(B)
   # if incompatible: P(A and B) = 0
-  # P(A - B) = P(A and B) / P(B)
-  # P(B - A) = P(A and B) / P(A)
+  # P(A | B) = P(A and B) / P(B)
+  # P(B | A) = P(A and B) / P(A)
 
   GetInputData <- reactive({
     req(input$exercise_4_page_input_a)

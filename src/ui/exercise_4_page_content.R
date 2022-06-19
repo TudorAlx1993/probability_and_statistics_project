@@ -11,7 +11,7 @@ Exercise4PageContent <- function() {
     # output:
     # P(A and B)
     # P(A or B)
-    # P(A-B)
+    # P(A|B)
     # P(B|A)
     numericInput(
       'exercise_4_page_input_a',

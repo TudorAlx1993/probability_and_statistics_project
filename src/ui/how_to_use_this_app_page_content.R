@@ -63,6 +63,21 @@ HowToUseThisAppPageContent <- function() {
         </ul>"
       )
     ),
+    h2("Exercise 4"),
+    p(
+      h3("Work with events"),
+      "Steps to follow:",
+      br(),
+      HTML(
+        "<ul>
+        <li>set the values for P(A) and P(B)</li>
+        <li>select the relationship between the two events</li>
+        <li>if relationship is unknown, input P(A and B)
+        <li>press the run button</li>
+        </ul>"
+      ),
+      "The output contains the evaluated probabilities of P(A and B), P(A or B), P(A|B) and P(B|A)."
+    ),
     h2("Exercise 5"),
     p(
       h3("Plot discrete random variable"),

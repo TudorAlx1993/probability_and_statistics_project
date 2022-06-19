@@ -3,10 +3,10 @@ LognormalDistribution <- function(miu, sigma) {
   
   results$description <-
     'O distributie lognormala este o distributie continua de probabilitate a unei variabile aleatoare al carei logaritm este distribuit normal . Astfel, daca variabila aleatoare X este log-normal distribuita, atunci Y = ln( X ) are o distributie normala.
-    În mod echivalent, daca Y are o distributie normala, atunci functia exponentiala a lui Y , X = exp( Y ), are o distributie log-normala.
-    O variabila aleatoare care este distribuita log-normal ia doar valori reale pozitive. Este un model convenabil si util pentru masuratori în stiinte exacte si inginerie , precum si în medicina , economie si alte subiecte (de exemplu, energii, concentratii, lungimi, preturi ale instrumentelor financiare si alte metrici).
+    in mod echivalent, daca Y are o distributie normala, atunci functia exponentiala a lui Y , X = exp( Y ), are o distributie log-normala.
+    O variabila aleatoare care este distribuita log-normal ia doar valori reale pozitive. Este un model convenabil si util pentru masuratori in stiinte exacte si inginerie , precum si in medicina , economie si alte subiecte (de exemplu, energii, concentratii, lungimi, preturi ale instrumentelor financiare si alte metrici).
 Distributia este denumita ocazional distributia Galton sau distributia lui Galton , dupa Francis Galton .Distributia log-normala a fost asociata si cu alte nume, cum ar fi McAlister, Gibrat si Cobb-Douglas .
-Un proces log-normal este realizarea statistica a produsului multiplicativ al multor variabile aleatoare independente , fiecare dintre acestea fiind pozitiva. Acest lucru este justificat prin luarea în considerare a teoremei limitei centrale în domeniul log (numit uneori legea lui Gibrat ). Distributia log-normala este distributia maxima a probabilitatii de entropie pentru o variabila aleatorie X - pentru care sunt specificate media si varianta lui ln( X ) .'
+Un proces log-normal este realizarea statistica a produsului multiplicativ al multor variabile aleatoare independente , fiecare dintre acestea fiind pozitiva. Acest lucru este justificat prin luarea in considerare a teoremei limitei centrale in domeniul log (numit uneori legea lui Gibrat ). Distributia log-normala este distributia maxima a probabilitatii de entropie pentru o variabila aleatorie X - pentru care sunt specificate media si varianta lui ln( X ) .'
   
   results$type <- 'continuous'
   

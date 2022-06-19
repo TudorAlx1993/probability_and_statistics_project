@@ -2,10 +2,10 @@ PoissonDistribution <- function(lambda) {
   results <- list()
   
   results$description <-
-    'Distributia Poisson este o distributie de probabilitate discreta care exprima probabilitatea ca un anumit numar de evenimente sa aiba loc într-un interval fix de timp sau spatiu, daca aceste evenimente au loc cu o rata medie constanta cunoscuta si independent de timpul de la ultimul eveniment.
+    'Distributia Poisson este o distributie de probabilitate discreta care exprima probabilitatea ca un anumit numar de evenimente sa aiba loc intr-un interval fix de timp sau spatiu, daca aceste evenimente au loc cu o rata medie constanta cunoscuta si independent de timpul de la ultimul eveniment.
     Este numit dupa matematicianul francez Simeon Denis Poisson.Distributia Poisson poate fi utilizata si pentru numarul de evenimente din alte tipuri de intervale specificate, cum ar fi distanta, suprafata sau volumul.
-De exemplu, un call center primeste în medie 180 de apeluri pe ora, 24 de ore pe zi. Apelurile sunt independente; primirea unuia nu modifica probabilitatea cand va sosi urmatorul. Numarul de apeluri primite în orice minut are o distributie de probabilitate Poisson: cele mai probabile numere sunt 2 si 3, dar 1 si 4 sunt, de asemenea, probabile si exista o probabilitate mica ca acesta sa fie la fel de mic ca zero si o probabilitate foarte mica sa fie posibil. 10.
-  Un alt exemplu este numarul de evenimente de dezintegrare care au loc de la o sursa radioactiva în timpul unei perioade de observare definite.'
+De exemplu, un call center primeste in medie 180 de apeluri pe ora, 24 de ore pe zi. Apelurile sunt independente; primirea unuia nu modifica probabilitatea cand va sosi urmatorul. Numarul de apeluri primite in orice minut are o distributie de probabilitate Poisson: cele mai probabile numere sunt 2 si 3, dar 1 si 4 sunt, de asemenea, probabile si exista o probabilitate mica ca acesta sa fie la fel de mic ca zero si o probabilitate foarte mica sa fie posibil. 10.
+  Un alt exemplu este numarul de evenimente de dezintegrare care au loc de la o sursa radioactiva in timpul unei perioade de observare definite.'
   
   results$type <- 'discrete'
   

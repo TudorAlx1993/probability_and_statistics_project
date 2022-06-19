@@ -3,9 +3,9 @@ ContinuousUniformDistribution <- function(a, b) {
   
   results$description <-
     'Distributia uniforma continua sau distributia dreptunghiulara este o familie de distributii de probabilitate simetrice.
-    Distributia descrie un experiment în care exista un rezultat arbitrar care se afla între anumite limite.Limitele sunt definite de parametrii, a si b , care sunt valorile minime si maxime.Intervalul poate fi fie închis (de ex. [a, b]) fie deschis (de ex. (a, b)).
+    Distributia descrie un experiment in care exista un rezultat arbitrar care se afla intre anumite limite.Limitele sunt definite de parametrii, a si b , care sunt valorile minime si maxime.Intervalul poate fi fie inchis (de ex. [a, b]) fie deschis (de ex. (a, b)).
     Prin urmare, distributia este adesea prescurtata U ( a ,b ), unde U reprezinta distributia uniforma.
-  Diferenta dintre limite defineste lungimea intervalului; toate intervalele de aceeasi lungime pe suportul distributiei sunt la fel de probabile. Este distributia de probabilitate maxima a entropiei pentru o variabila aleatoare X sub nicio alta constrangere decat aceea care este continuta în suportul distributiei'
+  Diferenta dintre limite defineste lungimea intervalului; toate intervalele de aceeasi lungime pe suportul distributiei sunt la fel de probabile. Este distributia de probabilitate maxima a entropiei pentru o variabila aleatoare X sub nicio alta constrangere decat aceea care este continuta in suportul distributiei'
   
   results$type <- 'continuous'
   

@@ -53,11 +53,11 @@ Exercise4 <- function(input, output) {
     })
     output$exercise_4_page_output_a_bar_b <- renderText({
       a_cond_b
-      paste('P(A - B) =', a_cond_b)
+      paste('P(A | B) =', a_cond_b)
     })
     output$exercise_4_page_output_b_bar_a <- renderText({
       b_cond_a
-      paste('P(B - A) =', b_cond_a)
+      paste('P(B | A) =', b_cond_a)
     })
   })
   

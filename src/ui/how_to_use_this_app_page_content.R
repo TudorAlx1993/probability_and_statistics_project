@@ -44,6 +44,25 @@ HowToUseThisAppPageContent <- function() {
         </ul>"
       )
     ),
+    h2("Exercise 3"),
+    p(
+      h3("Analysis of joint distribution"),
+      "Steps to follow:",
+      br(),
+      HTML(
+        "<ul>
+        <li>load CSV files representing a joint distribution X,Y: values of X, values of Y, and probabilities</li>
+        <li>press the run button</li>
+        </ul>"
+      ),
+      "The output consists of:",
+      HTML(
+        "<ul>
+        <li>two plots of the marginal distributions, X and Y respectively</li>
+        <li>Expected values and dispersions of X and Y, and covariance, correlation coefficient of X,Y</li>
+        </ul>"
+      )
+    ),
     h2("Exercise 5"),
     p(
       h3("Plot discrete random variable"),

@@ -55,8 +55,6 @@ Exercise3 <- function(input, output) {
     input.probs <- data[,3]
     
     joint.input <- jointRVFromInput(input.outcomes.x, input.outcomes.y, input.probs)
-    marginal(joint.input, 1)
-    marginal(joint.input, 2)
     x <- marginal(joint.input,1)
     y <- marginal(joint.input,2)
     MedieX <- E(x)

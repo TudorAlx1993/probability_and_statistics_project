@@ -44,19 +44,15 @@ Exercise4 <- function(input, output) {
     a_cond_b <- a_and_b / b
     b_cond_a <- a_and_b / a
     output$exercise_4_page_output_a_and_b <- renderText({
-      a_and_b
       paste('P(A and B) =', a_and_b)
     })
     output$exercise_4_page_output_a_or_b <- renderText({
-      a_or_b
       paste('P(A or B) =', a_or_b)
     })
     output$exercise_4_page_output_a_bar_b <- renderText({
-      a_cond_b
       paste('P(A | B) =', a_cond_b)
     })
     output$exercise_4_page_output_b_bar_a <- renderText({
-      b_cond_a
       paste('P(B | A) =', b_cond_a)
     })
   })

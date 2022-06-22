@@ -19,7 +19,7 @@ The project is split into 10 sections:
  * **Operations on discrete random variables**: add, substract, multiply or divide two imported discrete random variables
  * **Transformation of discrete random variable**: plots the result of an input transformation function applied on an imported discrete random variable
  * **Transformation of joint random variable distribution**: given an imported joint distribution X,Y and two transformation functions g() and h(), outputs the joint distribution of g(X) and h(Y)
- * **Calculate mean and variance of g(X)**: given a discrete or continuous random variableX with a selected distribution and input parameters, along with an input transformation function g(), calculates mean and variance of g(X)
+ * **Calculate mean and variance of g(X)**: given a discrete or continuous random variable X with a selected distribution and input parameters, along with an input transformation function g(), calculates mean and variance of g(X)
 
 Project structure:
   * `./src` contains the source code
